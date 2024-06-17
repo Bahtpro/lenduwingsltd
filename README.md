@@ -1,2 +1,0 @@
-# lenduwingsltd
-consolutation company
