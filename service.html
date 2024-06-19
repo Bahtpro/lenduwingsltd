@@ -1,70 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    /* Global reset and body styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern strong font */
-      line-height: 1.6;
-      background-color: #0e0224;
-    }
-
-    /* Styling for the main content */
-    .content-container {
-      background-color: hsl(235, 89%, 76%); /* Light blue background */
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 3D effect */
-      border-radius: 12px; /* Smooth edges */
-      margin: 20px; /* Margin to create space around the container */
-    }
-
-    .content-container p {
-      font-size: 1em; /* Increased font size */
-      font-weight: bold; /* Make text bold */
-      color: #333; /* Dark text color */
-      text-align: justify; /* Justify text */
-      padding: 5px 0; /* Add padding */
-    }
-    h2 {
-      font-family: "Arial Black", "Arial Bold", sans-serif; /* Modern 3D font */
-      font-size: 3em; /* Increased font size */
-      color: #02111b; /* Dark blue color */
-      text-transform: uppercase; /* Uppercase text */
-      letter-spacing: 2px; /* Letter spacing */
-      text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.5); /* Text shadow for 3D effect */
-    }
-    .heading-container1 {
-      text-align: center; /* Center align text */
-    }
-    h6 {
-      font-size: 1em;
-      color: #333; /* Dark text color */
-    }
-
-    .red-block {
-      background-color: #0b2921; /* Red color */
-      color: #fff; /* White text color */
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-    }
-    /* Define a CSS class to hide the element */
-    .hide-on-laptop {
-      display: block; /* Initially display the element */
-    }
-
-    /* Media query for screens larger than 992px (adjust as needed for laptops) */
-    @media (min-width: 992px) {
-      .hide-on-laptop {
-        display: none; /* Hide the element on larger screens */
-      }
-    }
-  </style>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -99,7 +34,21 @@
     <!--?========== CUSTOM CSS ===========?-->
 
     <link rel="stylesheet" href="./assets/css/require.css" />
-    <link rel="stylesheet" href="./assets/css/pages/service.css" />
+    <link rel="stylesheet" href="./assets/css/pages/portfolio.css" />
+
+    <style>
+      /* Define a CSS class to hide the element */
+      .hide-on-laptop {
+        display: block; /* Initially display the element */
+      }
+
+      /* Media query for screens larger than 992px (adjust as needed for laptops) */
+      @media (min-width: 992px) {
+        .hide-on-laptop {
+          display: none; /* Hide the element on larger screens */
+        }
+      }
+    </style>
   </head>
   <body>
     <!--?========== PRELOADER ===========?-->
@@ -111,141 +60,327 @@
     <!--?========== HEADER ===========?-->
 
     <header class="header" data-header>
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="./assets/images/lendu.png" width="151" height="28" alt="Alpha97 home">
-            </a>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/lendu.png"
+            width="151"
+            height="28"
+            alt="Alpha97 home"
+          />
+        </a>
 
-            <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="#" class="label-lg navbar-link has-after active">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./service.html" class="label-lg navbar-link has-after">About us</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./portfolio.html" class="label-lg navbar-link has-after">Our Profile</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./index.html" class="label-lg navbar-link has-after">Partnerships</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./index.html" class="label-lg navbar-link has-after">FAQ</a> 
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./contact.html" class="label-lg navbar-link has-after hide-on-laptop">Contact Us Now</a> 
-                    </li>
-                </ul>
-            </nav>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="label-lg navbar-link has-after active">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./service.html" class="label-lg navbar-link has-after"
+                >About us</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="./portfolio.html" class="label-lg navbar-link has-after"
+                >Newsroom</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="./index.html" class="label-lg navbar-link has-after"
+                >Partnerships</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="./index.html" class="label-lg navbar-link has-after"
+                >FAQ</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="./contact.html"
+                class="label-lg navbar-link has-after hide-on-laptop"
+                >Contact Us Now</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-            <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+        <a href="./contact.html" class="btn btn-primary">Contact Now</a>
 
-            <button class="nav-open-btn nav-toggle-btn" aria-label="menu" data-nav-toggler>
-                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-            </button>
-        </div>
+        <button
+          class="nav-open-btn nav-toggle-btn"
+          aria-label="menu"
+          data-nav-toggler
+        >
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
     </header>
 
     <main>
       <article>
-        <!--?========== SERVICE ===========?-->
+        <!--?========== PORTFOLIO ===========?-->
 
-        <section
-          class="section service has-bg-image"
-          aria-labelledby="service-label"
-          style="background-image: url(./assets/images/service-bg.png)"
-        >
+        <section class="section portfolio" aria-labelledby="portfolio-label">
           <div class="container">
-            <div class="heading-container1">
-              <h2>About Us</h2>
-            </div>
+            <h2
+              class="section-title headline-md text-center"
+              id="portfolio-label"
+            >
+              About Us
+            </h2>
 
-            <ul>
+            <ul class="portfolio-list">
               <li>
-                <div class="content-container">
-                  <p style="color: #050000">
-                    Lendu Wings Consultancy Ltd, headquartered in Mbale, Kenya,
-                    and registered under the Companies Act (Cap 486, Number 17
-                    of 2015), is a premier consultancy firm specializing in
-                    providing insightful and innovative solutions across diverse
-                    fields. Our strength lies in the exceptional expertise of
-                    our founding members, each bringing a unique blend of
-                    academic excellence, consultancy and research prowess, and
-                    practical experience. We are dedicated to delivering
-                    exceptional services tailored to meet the specific needs of
-                    our clients. Our firm places a high value on client
-                    satisfaction, confidentiality, and professionalism, ensuring
-                    that every project we undertake is approached with a
-                    commitment to excellence and a focus on delivering
-                    comprehensive and informed solutions. We specialize in
-                    consultancy services focused on providing investment
-                    management and strategic financial advice, capacity building
-                    and development and offering tailored solutions to
-                    individuals and institutional clients either independently
-                    or in collaboration with other experts to meet our clients'
-                    specific needs. Our commitment to delivering high-quality
-                    services underscores our emphasis on client satisfaction,
-                    confidentiality, and professionalism.
-                  </p>
-                  <div class="heading-container1">
-                    <h2>Our Services</h2>
+                <div class="portfolio-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 740"
+                  >
+                    <img
+                      src="./assets/images/jeff copy.png"
+                      width="800"
+                      height="740"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
+
+                    <a
+                      href="#"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing 
+                                        Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
                   </div>
-                  <h6>
-                    <div class="red-block">
-                      Financial analysis, Credit analysis, administration and
-                      delinquency management: Covering financial analysis,
-                      credit analysis, administration, and delinquency
-                      management.
-                    </div>
-                    <div class="red-block">
+
+                  <div class="card-content">
+                    <span class="chip label-md">who We Are</span>
+
+                    <!-- <h3 style="color: blue;">Dr. Geoffrey Ligare Abung’ana</h3> -->
+
+                    <p style="font-size: 15px; font-weight: 500; color: black">
+                      Lendu Wings Consultancy Ltd, headquartered in Mbale,
+                      Kenya, and registered under the Companies Act (Cap 486,
+                      Number 17 of 2015), is a premier consultancy firm
+                      specializing in providing insightful and innovative
+                      solutions across diverse fields. Our strength lies in the
+                      exceptional expertise of our founding members, each
+                      bringing a unique blend of academic excellence,
+                      consultancy and research prowess, and practical
+                      experience. We are dedicated to delivering exceptional
+                      services tailored to meet the specific needs of our
+                      clients. Our firm places a high value on client
+                      satisfaction, confidentiality, and professionalism,
+                      ensuring that every project we undertake is approached
+                      with a commitment to excellence and a focus on delivering
+                      comprehensive and informed solutions. We specialize in
+                      consultancy services focused on providing investment
+                      management and strategic financial advice, capacity
+                      building and development and offering tailored solutions
+                      to individuals and institutional clients either
+                      independently or in collaboration with other experts to
+                      meet our clients' specific needs. Our commitment to
+                      delivering high-quality services underscores our emphasis
+                      on client satisfaction, confidentiality, and
+                      professionalism.
+                    </p>
+                  </div>
+                  
+                </div>
+              </li>
+
+              <li>
+                <div class="portfolio-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 740"
+                  >
+                    <img
+                      src="./assets/images/dr kiganda copy.png"
+                      width="800"
+                      height="640"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
+
+                    <a
+                      href="#"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing 
+                                        Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <div class="card-content">
+                    <span class="chip label-md">What We Do</span>
+
+                    <!-- <h3  style="color: blue;">Dr. Evans Ovamba Kiganda</h3> -->
+
+                    <p style="font-size: 15px; font-weight: 500; color: black">
+                      Financial analysis, Credit analysis, administration and delinquency management: Covering financial analysis, credit analysis, administration, and delinquency management.
+
                       Entrepreneurship and Financial management training.
-                    </div>
-                    <div class="red-block">
+                      
                       Training of lenders and borrowers.
-                    </div>
-                    <div class="red-block">
-                      Strategic plans/Business plan/ proposal writing/Report
-                      writing.
-                    </div>
-                    <div class="red-block">Policy recommendation.</div>
-                    <div class="red-block">
+                      
+                      Strategic plans/Business plan/proposal writing/Report writing.
+                      
+                      Policy recommendation.
+                      
                       Data analysis SPSS, STATA, MINITAB and E-VIEWS.
-                    </div>
-                    <div class="red-block">
-                      Training in research methods/ capacity building.
-                    </div>
-                    <div class="red-block">
-                      Project Management/ Project Monitoring & Evaluation.
-                    </div>
-                    <div class="red-block">
+                      
+                      Training in research methods/capacity building.
+                      
+                      Project Management/Project Monitoring & Evaluation.
+                      
                       Public Policy Review and Analysis.
-                    </div>
-                    <div class="red-block">
+                      
                       Social-economic Research and data collection.
-                    </div>
-                    <div class="red-block">
-                      Risk assessment and Environmental Impact Assessment.
-                    </div>
-                    <div class="red-block">Trade and investment.</div>
-                  </h6>
+                      
+                     <p>Risk assessment and Environmental Impact Assessment.</p> 
+                      
+                     <p>Trade and investment.</p> 
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="portfolio-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 740"
+                  >
+                    <img
+                      src="./assets/images/joab.jpg"
+                      width="800"
+                      height="640"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
+
+                    <a
+                      href="#"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing 
+                                        Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <div class="card-content">
+                    <span class="chip label-md">Our Mission</span>
+
+                    <p style="font-size: 15px; font-weight: 500; color: black">
+                      Joab is currently the Founder and President at Joab’s
+                      Capital & Equity Research; a hedge fund and family office
+                      advisory firm registered in St. Nevis and Kitts tax haven
+                      that specializes in providing investment management and
+                      strategic financial advice to wealthy individuals and
+                      institutional clients, leveraging the favourable tax
+                      regulations and privacy benefits of the jurisdiction.
+                      JC&ER offers tailored services to optimize tax efficiency,
+                      asset protection, and wealth preservation. Joab is also an
+                      Advisory Board Member at Africa Trade and Investment
+                      Global Summit (ATIGS) a unique high-level conference and
+                      exhibition, prestigious, biennial business platform
+                      designed specifically to promote and facilitate
+                      international trade between Americas, Asia, EU, UAE, with
+                      Africa, facilitate foreign direct investment in Africa and
+                      provide a platform for businesses to expand into new
+                      markets. Joab is also a Cofounder at The Baileys and
+                      Partners Newsletter, an insightful financial newsletter
+                      targeting UHNWIs, sovereign wealth funds, hedge funds and
+                      other asset managers. Joab is a holder of B.Sc. in Applied
+                      Statistics from Maseno University majoring in Econometrics
+                      and Actuarial Science. He also holds an APID Diploma from
+                      London School and M.Sc. in Software Engineering from
+                      Kansas University. Joab is also a Certified International
+                      Investment Analyst (CIIA).
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="portfolio-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 740"
+                  >
+                    <img
+                      src="./assets/images/joab.jpg"
+                      width="800"
+                      height="640"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
+
+                    <a
+                      href="#"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing 
+                                        Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <div class="card-content">
+                    <span class="chip label-md">Our Vision</span>
+
+                    <p style="font-size: 15px; font-weight: 500; color: black">
+                      Joab is currently the Founder and President at Joab’s
+                      Capital & Equity Research; a hedge fund and family office
+                      advisory firm registered in St. Nevis and Kitts tax haven
+                      that specializes in providing investment management and
+                      strategic financial advice to wealthy individuals and
+                      institutional clients, leveraging the favourable tax
+                      regulations and privacy benefits of the jurisdiction.
+                      JC&ER offers tailored services to optimize tax efficiency,
+                      asset protection, and wealth preservation. Joab is also an
+                      Advisory Board Member at Africa Trade and Investment
+                      Global Summit (ATIGS) a unique high-level conference and
+                      exhibition, prestigious, biennial business platform
+                      designed specifically to promote and facilitate
+                      international trade between Americas, Asia, EU, UAE, with
+                      Africa, facilitate foreign direct investment in Africa and
+                      provide a platform for businesses to expand into new
+                      markets. Joab is also a Cofounder at The Baileys and
+                      Partners Newsletter, an insightful financial newsletter
+                      targeting UHNWIs, sovereign wealth funds, hedge funds and
+                      other asset managers. Joab is a holder of B.Sc. in Applied
+                      Statistics from Maseno University majoring in Econometrics
+                      and Actuarial Science. He also holds an APID Diploma from
+                      London School and M.Sc. in Software Engineering from
+                      Kansas University. Joab is also a Certified International
+                      Investment Analyst (CIIA).
+                    </p>
+                  </div>
                 </div>
               </li>
             </ul>
-            <p
-              style="
-                font-family: Verdana, sans-serif;
-                font-size: 34px;
-                text-align: center;
-                padding-top: 30px;
-                text-shadow: 0 0 10px #00ff00, 0 0 20px #ffd900,
-                  0 0 30px #ff0000;
-                color: #000747;
-                font-weight: bold;
-              "
-            >
-              When you need us.
-            </p>
           </div>
         </section>
       </article>
@@ -288,7 +423,7 @@
         </ul>
 
         <p class="text-center">
-          &copy;2024 lendu wings consultancy ltd, all rights reserved.
+          &copy; 2024 lendu wings consultancy ltd, all rights reserved.
         </p>
       </div>
     </footer>
@@ -308,6 +443,7 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
+
   <script>
     // JavaScript to add/remove class based on screen width
     window.addEventListener("DOMContentLoaded", function () {
