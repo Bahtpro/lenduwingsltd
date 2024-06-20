@@ -34,7 +34,7 @@
 
 .portfolio-list,
 .portfolio-card {
-  display: block;
+  display: grid;
 }
 
 .portfolio-list {
