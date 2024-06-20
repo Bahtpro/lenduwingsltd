@@ -150,7 +150,7 @@ html {
 }
 
 body {
-  background-color: rgb(15, 0, 82);
+  background-color: rgb(255, 255, 255);
   color: var(--davys-gray);
   font-size: 1.6rem;
   line-height: 1.5;
@@ -174,7 +174,7 @@ body.loaded {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(0, 100%, 37%);
+  background-color: hsl(0, 0%, 80%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
