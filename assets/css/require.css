@@ -150,7 +150,11 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   background-color: rgb(255, 255, 255);
+=======
+  background-color: rgb(0, 5, 82);
+>>>>>>> 4b724ec3041f4900d842b659bbc76332d34c0b29
   color: var(--davys-gray);
   font-size: 1.6rem;
   line-height: 1.5;

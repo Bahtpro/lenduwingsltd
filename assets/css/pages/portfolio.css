@@ -28,7 +28,7 @@
 /* ?============= PORTFOLIO.CSS =============?*/
 
 .portfolio {
-  background-color: var(--maximum-pink-light_a10);
+  background-color: rgb(0, 5, 82);
   padding-block-start: calc(var(--section-padding) + 60px);
 }
 

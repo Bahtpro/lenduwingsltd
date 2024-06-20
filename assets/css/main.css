@@ -397,14 +397,14 @@
   font-style: normal;
 }
 h1 {
-  font-family: 'CustomFont', Arial, sans-serif; /* Use custom font first, fallback to Arial */
-  font-size: 70px; /* Adjust size as needed */
-  color: #050116; /* Blue color */
-  text-shadow: 1px 1px 0 #77ff08, 4px 4px 0 #e9136c, 3px 3px 0 #fff01c; /* 3D effect */
-  letter-spacing: 0.1em; /* Adjust letter spacing */
-  margin: 0; /* Remove default margin */
-  padding: px; /* Add padding to create space around the text */
-  text-align: center; /* Center align the text */
+  font-family: 'CustomFont', Arial, sans-serif;
+  font-size: 70px;
+  color: #0a0229; /* Blue color */
+  text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #e9136c, 3px 3px 0 #fff01c, 0 0 100px white; /* 3D effect with white glow */
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 10px; /* Add padding to create space around the text */
+  text-align: center;
 }
 
 
